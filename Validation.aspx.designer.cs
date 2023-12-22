@@ -105,6 +105,15 @@ namespace Prac7
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDOB;
 
         /// <summary>
+        /// cvDOB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator cvDOB;
+
+        /// <summary>
         /// rblCardType control.
         /// </summary>
         /// <remarks>
@@ -139,15 +148,6 @@ namespace Prac7
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator regCardNum;
-
-        /// <summary>
-        /// cvDOB control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator cvDOB;
 
         /// <summary>
         /// btnSubmit control.

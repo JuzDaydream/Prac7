@@ -55,6 +55,7 @@
                         <asp:TextBox ID="txtDOB" runat="server" TextMode="Date" Width="150px"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvDOB" runat="server" ControlToValidate="txtDOB" ErrorMessage="Date of Birth is Required" ForeColor="Tomato">*</asp:RequiredFieldValidator>
                         <%--<asp:CompareValidator ID="cvDOB" runat="server" ControlToValidate="txtDOB" ErrorMessage="Date Must be before Today Date" ForeColor="Tomato" Operator="LessThan">*</asp:CompareValidator>--%>
+                        <asp:CompareValidator ID="cvDOB" runat="server" ControlToValidate="txtDOB" ErrorMessage="Date must be lesser than Today's Date" ForeColor="Tomato" Operator="LessThan">*</asp:CompareValidator>
                     </td>
                 </tr>
                 <tr>
@@ -72,7 +73,6 @@
                         <asp:TextBox ID="txtCardNum" runat="server" Width="150px"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvCardNum" runat="server" ControlToValidate="txtCardNum" ErrorMessage="Credit Card Number is Required" ForeColor="Tomato">*</asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="regCardNum" runat="server" ControlToValidate="txtCardNum" ErrorMessage="Invalid Credit Card Number" ForeColor="Tomato" ValidationExpression="(^4\d{15})|(^5\d{15})">*</asp:RegularExpressionValidator>
-                        <asp:CompareValidator ID="cvDOB" runat="server" ControlToValidate="txtDOB" ErrorMessage="Date must be lesser than Today's Date" ForeColor="Tomato" Operator="LessThan"></asp:CompareValidator>
                     </td>
                 </tr>
                 <tr>
